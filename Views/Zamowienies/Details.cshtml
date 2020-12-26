@@ -1,0 +1,36 @@
+﻿@model biblioteka___nowy_projekt.Models.Zamowienie
+
+@{
+    ViewData["Title"] = "Szczegóły wypożyczenia";
+}
+
+<h1>Szczegóły wypożyczenia</h1>
+
+<div>
+
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DataZamowienia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataZamowienia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Czytelnik)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Czytelnik.ImieNazwisko)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ksiazka)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ksiazka.Tytul)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdZamowienie">Edytuj</a> |
+    <a asp-action="Index">Wróć do listy</a>
+</div>

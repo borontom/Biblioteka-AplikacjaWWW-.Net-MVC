@@ -1,0 +1,59 @@
+﻿@model IEnumerable<biblioteka___nowy_projekt.Models.Ksiazka>
+
+@{
+    ViewData["Title"] = "Lista książek";
+}
+
+<h1>Lista książek</h1>
+
+<p>
+    <a asp-action="Create">Dodaj książkę</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Tytul)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Autor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Wydawnictwo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RokWydania)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Kategorie)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tytul)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Autor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Wydawnictwo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RokWydania)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kategorie.Nazwa)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdKsiazka">Edytuj</a> |
+                <a asp-action="Details" asp-route-id="@item.IdKsiazka">Szczegóły</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdKsiazka">Usuń</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

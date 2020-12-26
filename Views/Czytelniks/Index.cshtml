@@ -1,0 +1,53 @@
+﻿@model IEnumerable<biblioteka___nowy_projekt.Models.Czytelnik>
+
+@{
+    ViewData["Title"] = "Lista czytelników";
+}
+
+<h1>Lista czytelników</h1>
+
+<p>
+    <a asp-action="Create">Dodaj czytelnika</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Imie)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nazwisko)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Miasto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefon)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Imie)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nazwisko)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Miasto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefon)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdCzytelnik">Edytuj</a> |
+                <a asp-action="Details" asp-route-id="@item.IdCzytelnik">Szczegóły</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdCzytelnik">Usuń</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

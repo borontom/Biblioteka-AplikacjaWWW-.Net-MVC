@@ -1,0 +1,27 @@
+﻿@model biblioteka___nowy_projekt.Models.Kategoria
+
+@{
+    ViewData["Title"] = "Usuń kategorię";
+}
+
+
+
+<h3>Czy na pewno chcesz usunąć tą kategorię?</h3>
+<div>
+
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nazwa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nazwa)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdKategoria" />
+        <input type="submit" value="Usuń" class="btn btn-danger" /> |
+        <a asp-action="Index">Wróć do listy</a>
+    </form>
+</div>

@@ -1,0 +1,39 @@
+﻿@model biblioteka___nowy_projekt.Models.Zamowienie
+
+@{
+    ViewData["Title"] = "Usuń wypożyczenie";
+}
+
+<h1>Usuń wypożyczenie</h1>
+
+<h3>Czy na pewno?</h3>
+<div>
+
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DataZamowienia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataZamowienia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Czytelnik)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Czytelnik.ImieNazwisko)
+        </dd class>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ksiazka)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ksiazka.Tytul)
+        </dd class>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdZamowienie" />
+        <input type="submit" value="Usuń" class="btn btn-danger" /> |
+        <a asp-action="Index">Wróć do listy</a>
+    </form>
+</div>

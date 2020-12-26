@@ -1,0 +1,44 @@
+﻿@model biblioteka___nowy_projekt.Models.Zamowienie
+
+@{
+    ViewData["Title"] = "Edycja wypożyczenia";
+}
+
+<h1>Edycja wypożyczenia</h1>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdZamowienie" />
+            <div class="form-group">
+                <label asp-for="CzytelnikId" class="control-label">Czytelnik</label>
+                <select asp-for="CzytelnikId" class="form-control" asp-items="ViewBag.CzytelnikId"></select>
+                <span asp-validation-for="CzytelnikId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KsiazkaId" class="control-label">Tytuł ksiązki</label>
+                <select asp-for="KsiazkaId" class="form-control" asp-items="ViewBag.KsiazkaId"></select>
+                <span asp-validation-for="KsiazkaId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataZamowienia" class="control-label">Data wypożyczenia</label>
+                <input asp-for="DataZamowienia" class="form-control" />
+                <span asp-validation-for="DataZamowienia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Zapisz" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Wróć do listy</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
