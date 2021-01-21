@@ -8827,11 +8827,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tomasz\\source\\repos\\biblioteka - nowy projekt\\biblioteka - nowy projekt.csproj",
+      "projectUniqueName": "C:\\Users\\Tomasz\\Source\\Repos\\Biblioteka-AplikacjaWWW-.Net-MVC\\biblioteka - nowy projekt.csproj",
       "projectName": "biblioteka - nowy projekt",
-      "projectPath": "C:\\Users\\Tomasz\\source\\repos\\biblioteka - nowy projekt\\biblioteka - nowy projekt.csproj",
+      "projectPath": "C:\\Users\\Tomasz\\Source\\Repos\\Biblioteka-AplikacjaWWW-.Net-MVC\\biblioteka - nowy projekt.csproj",
       "packagesPath": "C:\\Users\\Tomasz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tomasz\\source\\repos\\biblioteka - nowy projekt\\obj\\",
+      "outputPath": "C:\\Users\\Tomasz\\Source\\Repos\\Biblioteka-AplikacjaWWW-.Net-MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Tomasz\\AppData\\Roaming\\NuGet\\NuGet.Config",

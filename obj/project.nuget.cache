@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WpyHETu2a8PUCHpiz54kqqn+y6VRpHuSOobvA9axfIJItsnhQGPZIby7TP656CoIC4+z5Ib+4OVtbkkEkQpttA==",
+  "dgSpecHash": "64R57kzjnTzc60ix/3MTjLpngJZAbrowl31M2LdSd0HpZLwwO9Pecb4QI55wy21LIW+l+MpTWAfXgLXkbVTyUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tomasz\\source\\repos\\biblioteka - nowy projekt\\biblioteka - nowy projekt.csproj",
+  "projectFilePath": "C:\\Users\\Tomasz\\source\\repos\\Biblioteka-AplikacjaWWW-.Net-MVC\\biblioteka - nowy projekt.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tomasz\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Tomasz\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
